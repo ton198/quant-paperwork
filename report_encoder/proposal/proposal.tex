@@ -1,0 +1,110 @@
+\documentclass[11pt]{article}
+
+% --- Packages and formatting ---
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{parskip}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\definecolor{promptgray}{HTML}{666666}
+
+% Replace each \prompt{...} with your own prose before submitting.
+\newcommand{\prompt}[1]{\textcolor{promptgray}{\textit{[#1]}}}
+
+\title{\textbf{An Informative Project Title}}
+\author{Student 1 Name \quad \& \quad Student 2 Name \\
+        CSC 245/445 --- Team Name}
+\date{}
+
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\section{Problem \& Motivation}
+
+\subsection{Problem Statement and Motivation}
+\prompt{Clearly describe the problem you want to solve, why it is important,
+who would benefit, and what motivates your choice. You may draw inspiration
+from open challenges and workshops at ICLR, NeurIPS, CVPR, or ACL, or from
+applications of deep learning that interest you.}
+
+\subsection{ML/DL Task Formulation}
+\prompt{Explain how you formulate the problem as a machine-learning or
+deep-learning task. Specify the input, desired output, and learning setting
+(e.g., classification, regression, generation, retrieval, segmentation).}
+
+\subsection{Illustrative Example (Optional)}
+\prompt{Add a small illustrative figure, example input/output pair, or task
+diagram if it helps the reader understand the problem.}
+
+% To insert a figure, uncomment and edit:
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.75\linewidth]{problem-illustration.pdf}
+%   \caption{Illustration of the proposed task.}
+%   \label{fig:problem}
+% \end{figure}
+
+\section{Methods}
+
+\subsection{Open-Source Baseline}
+\prompt{Identify an existing open-source model or method expected to
+perform reasonably well on your task. Cite the paper and link the
+implementation, and explain why it is an appropriate baseline.}
+
+\subsection{Proposed Method}
+\prompt{Describe your proposed approach and the concrete steps needed to
+implement it. If the problem is new, identify an existing method that can
+reasonably be adapted or extended to solve it. Explain how your approach
+relates to the baseline.}
+
+\subsection{Research Hypothesis (CSC 445)}
+\prompt{For CSC 445: state a specific, testable research hypothesis involving
+an innovative improvement over the baseline. Explain why you expect it to
+work. For CSC 245, omit this subsection if it is not required.}
+
+\subsection{Method Illustration (Optional)}
+\prompt{Include a baseline architecture diagram or method figure if it
+would clarify the approach.}
+
+% To insert a baseline/model figure, uncomment and edit:
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\linewidth]{baseline-architecture.pdf}
+%   \caption{Baseline model or proposed method overview.}
+%   \label{fig:method}
+% \end{figure}
+
+\section{Evaluation Plan}
+
+\subsection{Datasets and Test Cases}
+\prompt{Identify the dataset(s) on which you will evaluate your method.
+Explain the data source, approximate size, train/validation/test split,
+and relevant preprocessing. Consider challenging or unusual corner cases
+that may be overlooked in existing literature.}
+
+\subsection{Evaluation Metrics}
+\prompt{Specify the performance measure(s) you will report and justify
+why each metric is appropriate for the task (e.g., accuracy, F1, AUROC,
+BLEU, IoU, MAE).}
+
+\subsection{Training / Fine-Tuning Feasibility}
+\prompt{Provide a realistic plan for model training. For smaller models,
+explain how you will train on the dataset. For large/foundation models
+(e.g., LLMs or ViTs), explain how you will fine-tune them. Include
+compute resources, time constraints, and a feasible experimental scope.}
+
+\subsection{Comparison Strategy}
+\prompt{Explain how you will compare the baseline with your proposed
+method, and what results would support or reject your hypothesis.}
+
+% Add bibliography entries or your preferred BibTeX setup when needed.
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\end{document}
